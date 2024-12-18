@@ -26,6 +26,8 @@
 **Запуск на windows**
 >  `$env:PYTHONPATH="."; pytest tests/ --alluredir=allure-results -v`
 >  `$env:PYTHONPATH="."; pytest tests/ --cov=praktikum --cov-report=html`
+>  `$env:PYTHONPATH="."; pytest tests/ -v`
+
 
 **Открыть отчет в брузере**
 >  `coverage html`

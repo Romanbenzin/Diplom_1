@@ -1,7 +1,6 @@
 from bun import Bun
 
 class TestBun:
-
     def test_name(self):
         new_bun = Bun('Булочка с маком', 12)
 
