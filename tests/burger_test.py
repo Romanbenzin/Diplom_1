@@ -1,3 +1,5 @@
+from unittest.mock import Mock
+
 from bun import Bun
 from burger import Burger
 from ingredient import Ingredient
@@ -13,10 +15,25 @@ class TestBurger:
     def setup_method(self):
         # Создание булочки
         self.new_bun = Bun(BURGER_NAME_BUN, BURGER_PRICE_BUN)
+        # Мок объекта кетчунез
+        ketchunese_mock = Mock()
+        ketchunese_mock.get_name.return_value = INGREDIENT_NAME_KETCHUNESE
+        ketchunese_mock.get_price.return_value = INGREDIENT_PRICE_KETCHUNESE
+
+        # Мок объекта мясо
+        beef_mock = Mock()
+        beef_mock.get_name.return_value = INGREDIENT_NAME_BEEF
+        beef_mock.get_price.return_value = INGREDIENT_PRICE_BEEF
+
+        # Мок объекта морковь
+        carrot_mock = Mock()
+        carrot_mock.get_name.return_value = INGREDIENT_NAME_CARROT
+        carrot_mock.get_price.return_value = INGREDIENT_PRICE_CARROT
+
         # Создание ингредиентов
-        ketchunese = Ingredient(INGREDIENT_TYPE_SAUCE, INGREDIENT_NAME_KETCHUNESE, INGREDIENT_PRICE_KETCHUNESE)
-        beef = Ingredient(INGREDIENT_TYPE_FILLING, INGREDIENT_NAME_BEEF, INGREDIENT_PRICE_BEEF)
-        carrot = Ingredient(INGREDIENT_TYPE_FILLING, INGREDIENT_NAME_CARROT, INGREDIENT_PRICE_CARROT)
+        ketchunese = Ingredient(INGREDIENT_TYPE_SAUCE, ketchunese_mock.get_name.return_value, ketchunese_mock.get_price.return_value)
+        beef = Ingredient(INGREDIENT_TYPE_FILLING, beef_mock.get_name.return_value, beef_mock.get_price.return_value)
+        carrot = Ingredient(INGREDIENT_TYPE_FILLING, carrot_mock.get_name.return_value, carrot_mock.get_price.return_value )
         # Создание объекта бургер
         self.new_burger = Burger()
         # Добавление булочки бургеру
