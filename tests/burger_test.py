@@ -5,7 +5,7 @@ from static_data.ingredient_name_price import INGREDIENT_PRICE_KETCHUNESE, INGRE
     INGREDIENT_PRICE_BEEF, INGREDIENT_NAME_BEEF, INGREDIENT_NAME_CARROT, INGREDIENT_PRICE_CARROT, BURGER_NAME_BUN, \
     BURGER_PRICE_BUN
 from static_data.ingredient_types import INGREDIENT_TYPE_SAUCE, INGREDIENT_TYPE_FILLING
-from static_data.static_data_for_burger import expected_receipt_after_remove, expected_receipt_before_remove, \
+from static_data.static_data_for_burger_tests import expected_receipt_after_remove, expected_receipt_before_remove, \
     expected_receipt_before_move_ingredient
 
 
