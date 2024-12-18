@@ -1,0 +1,10 @@
+"""
+Названия и цены ингредиентов.
+SAUCE – соус
+FILLING – начинка
+"""
+INGREDIENT_NAME_KETCHUNESE = 'ketchunese'
+INGREDIENT_PRICE_KETCHUNESE = 999999
+
+INGREDIENT_NAME_CARROT = 'carrot'
+INGREDIENT_PRICE_CARROT = 2
