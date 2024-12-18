@@ -20,14 +20,10 @@
 > `$ pip install -r requirements.txt`
 
 **Запуск автотестов и создание HTML-отчета о покрытии**
-
 >  `$ pytest --cov=praktikum --cov-report=html`
 
 **Запуск на windows**
->  `$env:PYTHONPATH="."; pytest tests/ --alluredir=allure-results -v`
->  `$env:PYTHONPATH="."; pytest tests/ --cov=praktikum --cov-report=html`
->  `$env:PYTHONPATH="."; pytest tests/ -v`
-
+>  `$env:PYTHONPATH="."; pytest tests/ --cov --cov-report=html`
 
 **Открыть отчет в брузере**
 >  `coverage html`
