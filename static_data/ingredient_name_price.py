@@ -1,0 +1,16 @@
+"""
+Названия и цены ингредиентов.
+SAUCE – соус
+FILLING – начинка
+"""
+INGREDIENT_NAME_KETCHUNESE = 'ketchunese'
+INGREDIENT_PRICE_KETCHUNESE = 6
+
+INGREDIENT_NAME_CARROT = 'carrot'
+INGREDIENT_PRICE_CARROT = 4
+
+INGREDIENT_NAME_BEEF = 'beef'
+INGREDIENT_PRICE_BEEF = 8
+
+BURGER_NAME_BUN = 'Булочка с кунжутом'
+BURGER_PRICE_BUN = 2
